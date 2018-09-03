@@ -14,8 +14,8 @@ song.artist_name=(title[0])
   end
 
   def artist_name=(name)
-    Artist.find_or_create_by_name(name)
-    Artist.add_song(self)
+    atrtist = Artist.find_or_create_by_name(name)
+    atrtist.add_song(self)
   end
 
 
