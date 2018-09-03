@@ -4,11 +4,11 @@ class Song
 
   def initialize(name)
     @name = name
-    
+
   end
 
   def self.new_by_filename(filename)
-title = filename.split(" - ")
+title = filename.split('-')
 song =    self.new(title[1])
 song.artist_name=(title[0])
   end
